@@ -1,15 +1,29 @@
-# Tourism 
-Assault Rifels application
+# Assault Rifels application
 ### Hosted On     
 <img src="https://img.shields.io/badge/firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black" alt="firebase"/>
-Live Link 
+Live website Link 
 
 ```javascript
 
-https://tourism-23.web.app/ 
+https://assault-rifles.web.app/
+ 
+```
+
+Live API Link 
+
+```javascript
+
+https://assault-rifles-backend-api.herokuapp.com/
  
 ```
  
+Back end application
+
+```javascript
+
+https://github.com/programming-hero-web-course-4/niche-website-client-side-AhnabShahin
+ 
+```
  
  
 [![-----------------------------------------------------](
