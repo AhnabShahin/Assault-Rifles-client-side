@@ -87,13 +87,18 @@ const Main = () => {
                 </PrivateRoute>
 
                 {user.email ?
-                    <PrivateRoute path="/dashboard">
-                        {isAdmin ?
-                            <AdminDashboard></AdminDashboard>
-                            :
-                            <Dashboard></Dashboard>
-                        }
-                    </PrivateRoute>
+                    <>
+                        <PrivateRoute path="/dashboard">
+                            {isAdmin ?
+                                <AdminDashboard></AdminDashboard>
+                                :
+                                <Dashboard></Dashboard>
+                            }
+                        </PrivateRoute>
+                        <Route exact={true} path='*'>
+                            <NotFound></NotFound>
+                        </Route>
+                    </>
                     :
                     <>
                         <Route exact path="/login">
@@ -102,11 +107,12 @@ const Main = () => {
                         <Route exact path="/registration">
                             <Registration />
                         </Route>
+                        <Route exact={true} path='*'>
+                            <NotFound></NotFound>
+                        </Route>
                     </>
                 }
-                <Route exact path="*">
-                    <NotFound></NotFound>
-                </Route>
+
             </Switch>
             <Footer></Footer>
         </Router>
