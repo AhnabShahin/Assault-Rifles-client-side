@@ -1,7 +1,7 @@
 # Assault Rifels application
 ### Hosted On     
 <img src="https://img.shields.io/badge/firebase-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black" alt="firebase"/>
-Live website Link 
+Live Website Link 
 
 ```javascript
 
@@ -17,11 +17,11 @@ https://assault-rifles-backend-api.herokuapp.com/
  
 ```
  
-Back end application
+Back End application
 
 ```javascript
 
-https://github.com/programming-hero-web-course-4/niche-website-client-side-AhnabShahin
+https://github.com/programming-hero-web-course-4/niche-website-server-side-AhnabShahin/
  
 ```
  
