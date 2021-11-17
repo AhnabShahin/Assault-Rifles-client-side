@@ -1,0 +1,36 @@
+
+.reviewCard{
+    display: flex;
+    border: 1px solid var(--main);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.review-cart-right-button{
+    position: absolute;
+    background-color: var(--main);
+    width: 55%;
+    height: 100%;
+    right:0;
+    border: none;
+    clip-path: polygon(22% 0, 100% 0, 100% 100%, 0 100%);
+    color: var(--white);
+    font-family: var(--mainFont);
+    font-weight: 500;
+    border: 1px solid var(--main);
+}
+.review-cart-left-button{
+    position: absolute;
+    background-color: var(--main);
+    color: var(--white);
+    width: 45%;
+    height: 100%;
+    left: 0;
+    border: none;
+    clip-path: polygon(0 0, 100% 0, 75% 100%,0 100%);
+    font-family: var(--mainFont);
+    font-weight: 500;
+    cursor: text !important;
+}
+.cardPrice{
+    text-align: end;
+}

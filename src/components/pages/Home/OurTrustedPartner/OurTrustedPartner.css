@@ -1,0 +1,9 @@
+.ourTrustedPartnerContainer{
+    background-color: var(--third);
+    padding: 1rem 0;
+}
+.trustedPartnerCard{
+    background-color: var(--main);
+    width: 100%;
+    height:200px
+}

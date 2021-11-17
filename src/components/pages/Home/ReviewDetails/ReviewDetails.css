@@ -1,0 +1,25 @@
+.singleReviewContainer{
+    border: 1px solid var(--main);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.reviewText{
+ 
+}
+.singleReviewHead{
+    font-family: var(--secondFont);
+    font-weight: 700;
+    color: var(--main);
+    margin-bottom: 1rem;
+}
+.singleReviewTitle{
+    font-family: var(--mainFont);
+    margin-bottom: 1rem;
+    color: var(--fourth);
+}
+.singleReviewDisciption{
+    font-family: var(--mainFont);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    
+}

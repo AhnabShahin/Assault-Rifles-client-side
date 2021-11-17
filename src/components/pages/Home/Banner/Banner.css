@@ -1,0 +1,58 @@
+.banner-slider{
+    height: 30rem;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    width: 100%;
+}
+.banner-text-container{
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.slick-list{
+    background-color: var(--third);
+}
+.left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    text-align: start;
+    max-width: 50%;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 50%;
+}
+.right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    text-align: end;
+    max-width: 50%;
+}
+
+.banner-text >h1{
+    color: var(--white);
+    font-family: var(--secondFont);
+}
+.banner-text >h5{
+    color: var(--white);
+    font-family: var(--mainFont);
+}
+.banner-slider img{
+    opacity: .5;
+}
+@media screen and (max-width: 991px) {
+    .banner-slider{
+        height: 20rem;
+        overflow: hidden;
+    }
+}

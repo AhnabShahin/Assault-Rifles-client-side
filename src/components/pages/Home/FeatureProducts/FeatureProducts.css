@@ -1,0 +1,112 @@
+.featureProductsSection{
+    background-color: var(--third);
+    padding: 3rem 0;
+}
+.title-contain{
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+.title-contain h2
+{
+    text-align: center;
+    color: var(--white);
+    font-family: var(--secondFont);
+}
+.title-contain p{
+    text-align: center;
+    color: var(--white);
+    font-family: var(--mainFont);
+}
+.title-contain> h2:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 50px;
+    height: 30px;
+    background:var(--main);
+    -webkit-clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+}
+.title-contain> h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 50px;
+    height: 30px;
+    background: var(--main);
+    -webkit-clip-path:  polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+}
+.card{
+    background-color:var(--third);
+    border: 1px solid var(--main);
+}
+.card-img-top{
+    max-height: 200px;
+}
+.cardTitle{
+    color:var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--secondFont);
+    font-size: 20px;
+}
+.cardDisciption{
+    color:var(--fourth);
+    text-align: center;
+    font-family: var(--mainFont);
+}
+.cardPrice{
+    color:var(--main);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--secondFont);
+    font-size: 20px;
+}
+.button-holder{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--main);
+
+}
+.cart-left-button{
+    position: absolute;
+    background-color: var(--main);
+    width: 50%;
+    height: 100%;
+    left: 0;
+    border: none;
+    clip-path: polygon(0 0, 100% 0, 75% 100%,0 100%);
+    color: var(--third);
+    font-family: var(--mainFont);
+    font-weight: 500;
+}
+.cart-right-button{
+    position: absolute;
+    background-color: var(--main);
+    width: 50%;
+    height: 100%;
+    right:0;
+    border: none;
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    color: var(--third);
+    font-family: var(--mainFont);
+    font-weight: 500;
+    border: 1px solid var(--main);
+}
+.cart-right-button:hover,
+.cart-left-button:hover{
+    color: var(--white);
+}
+@media screen and (max-width: 991px) {
+    .title-contain{
+        max-width: 400px;
+    }
+}

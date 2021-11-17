@@ -1,0 +1,105 @@
+.navItem,.brandName{
+    padding: 10px 10px;
+    background-color: var(--main);
+    margin: 5px 10px;
+    transform: skew(20deg);
+}
+.navItem a{
+    display: block; 
+    color: var(--white);
+    font-weight: 700;
+    font-family: var(--main);
+    text-decoration: none;
+    transform: skew(-20deg);
+}
+
+
+.brandName a{
+    font-family: var(--secondFont);    
+    display: block; 
+    color: var(--white);
+    font-weight: 500;
+    text-decoration: none;
+    transform: skew(-20deg);
+}
+.pro-img{
+    height: 30px;
+    width: 30px;
+    background-color: var(--main);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--main);
+}
+.pro-img img{
+    height: 100%;
+    width: 100%;
+}
+.dropdown-toggle::after {
+    display:none;
+}
+.dropdown-menu[data-bs-popper]{
+    right: 0;
+    left: auto;
+}
+.dropdown-menu{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    opacity: 1;
+    animation-name: animation01;
+    animation-duration: 2s;  
+}
+@keyframes animation01 {
+    from {opacity: 0;}
+    to {opacity:1;}
+  }
+.dropdown-menu a{
+    color: var(--white);
+    background-color: var(--main);
+    font-weight: 500;
+    margin-bottom: 5px ;
+    display: block;
+    transform: skew(20deg);
+}
+.dropdown-menu >a >span{
+    display: block;
+    transform: skew(-20deg)
+}
+.dropdown-menu a:hover{
+    color: var(--main);
+}
+@media screen and (max-width: 991px) {
+    .navItemContainer{
+        margin-top: 8px;
+        position: absolute;
+        left: 0;
+        opacity: 1;
+        animation-name: animation02;
+        animation-duration: 2s; 
+        z-index: 9;
+    }
+    @keyframes animation02 {
+        from {opacity: 0;}
+        to {opacity:1;}
+      }
+    .navItem{
+        padding: 5px 15px;
+        background-color: var(--main);
+        margin-bottom: 0px ;
+        transform: skew(20deg);
+    }
+    .navbar-toggler-icon {
+        background-image: url("../../../assets/images/target.png") !important;
+        width: 100%;
+        height: 100%;
+    }
+    .navbar-toggler{
+        padding: 0;
+        height: 40px;
+        width: 40px;
+        border:2px solid var(--main) !important;
+        border-color: var(--main) !important;
+        font-size: 1rem !important;
+        z-index: 9;
+    }
+    
+}
