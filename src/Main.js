@@ -88,28 +88,32 @@ const Main = () => {
 
                 {user.email ?
                     <>
-                        <PrivateRoute path="/dashboard">
-                            {isAdmin ?
-                                <AdminDashboard></AdminDashboard>
-                                :
-                                <Dashboard></Dashboard>
-                            }
-                        </PrivateRoute>
-                        <Route exact={true} path='*'>
-                            <NotFound></NotFound>
-                        </Route>
+                        <Switch>
+                            <PrivateRoute path="/dashboard">
+                                {isAdmin ?
+                                    <AdminDashboard></AdminDashboard>
+                                    :
+                                    <Dashboard></Dashboard>
+                                }
+                            </PrivateRoute>
+                            <Route exact={true} path='*'>
+                                <NotFound></NotFound>
+                            </Route>
+                        </Switch>
                     </>
                     :
                     <>
-                        <Route exact path="/login">
-                            <Login />
-                        </Route>
-                        <Route exact path="/registration">
-                            <Registration />
-                        </Route>
-                        <Route exact={true} path='*'>
-                            <NotFound></NotFound>
-                        </Route>
+                        <Switch>
+                            <Route exact path="/login">
+                                <Login />
+                            </Route>
+                            <Route exact path="/registration">
+                                <Registration />
+                            </Route>
+                            <Route exact={true} path='*'>
+                                <NotFound></NotFound>
+                            </Route>
+                        </Switch>
                     </>
                 }
 
